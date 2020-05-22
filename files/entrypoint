@@ -87,7 +87,7 @@ if [ -d /etc/sftp.d ]; then
 fi
 
 log "Executing cron"
-exec /usr/sbin/cron &
+exec /usr/sbin/crond &
 
 if $startSshd; then
     log "Executing sshd"
